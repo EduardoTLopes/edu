@@ -26,6 +26,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`edu commit`](#edu-commit)
+* [`edu hello PERSON`](#edu-hello-person)
+* [`edu hello world`](#edu-hello-world)
 * [`edu help [COMMAND]`](#edu-help-command)
 * [`edu plugins`](#edu-plugins)
 * [`edu plugins add PLUGIN`](#edu-plugins-add-plugin)
@@ -37,6 +40,65 @@ USAGE
 * [`edu plugins uninstall [PLUGIN]`](#edu-plugins-uninstall-plugin)
 * [`edu plugins unlink [PLUGIN]`](#edu-plugins-unlink-plugin)
 * [`edu plugins update`](#edu-plugins-update)
+
+## `edu commit`
+
+Command to generate commits
+
+```
+USAGE
+  $ edu commit
+
+DESCRIPTION
+  Command to generate commits
+
+EXAMPLES
+  $ edu commit
+```
+
+_See code: [src/commands/commit.ts](https://github.com/EduardoTLopes/edu/blob/v0.0.0/src/commands/commit.ts)_
+
+## `edu hello PERSON`
+
+Say hello
+
+```
+USAGE
+  $ edu hello PERSON -f <value>
+
+ARGUMENTS
+  PERSON  Person to say hello to
+
+FLAGS
+  -f, --from=<value>  (required) Who is saying hello
+
+DESCRIPTION
+  Say hello
+
+EXAMPLES
+  $ oex hello friend --from oclif
+  hello friend from oclif! (./src/commands/hello/index.ts)
+```
+
+_See code: [src/commands/hello/index.ts](https://github.com/EduardoTLopes/edu/blob/v0.0.0/src/commands/hello/index.ts)_
+
+## `edu hello world`
+
+Say hello world
+
+```
+USAGE
+  $ edu hello world
+
+DESCRIPTION
+  Say hello world
+
+EXAMPLES
+  $ edu hello world
+  hello world! (./src/commands/hello/world.ts)
+```
+
+_See code: [src/commands/hello/world.ts](https://github.com/EduardoTLopes/edu/blob/v0.0.0/src/commands/hello/world.ts)_
 
 ## `edu help [COMMAND]`
 
@@ -56,7 +118,7 @@ DESCRIPTION
   Display help for edu.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.0.20/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.0.21/src/commands/help.ts)_
 
 ## `edu plugins`
 
@@ -79,7 +141,7 @@ EXAMPLES
   $ edu plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.6/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/index.ts)_
 
 ## `edu plugins add PLUGIN`
 
@@ -153,7 +215,7 @@ EXAMPLES
   $ edu plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.6/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/inspect.ts)_
 
 ## `edu plugins install PLUGIN`
 
@@ -202,7 +264,7 @@ EXAMPLES
     $ edu plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.6/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/install.ts)_
 
 ## `edu plugins link PATH`
 
@@ -232,7 +294,7 @@ EXAMPLES
   $ edu plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.6/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/link.ts)_
 
 ## `edu plugins remove [PLUGIN]`
 
@@ -273,7 +335,7 @@ FLAGS
   --reinstall  Reinstall all plugins after uninstalling.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.6/src/commands/plugins/reset.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/reset.ts)_
 
 ## `edu plugins uninstall [PLUGIN]`
 
@@ -301,7 +363,7 @@ EXAMPLES
   $ edu plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.6/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/uninstall.ts)_
 
 ## `edu plugins unlink [PLUGIN]`
 
@@ -345,5 +407,5 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.6/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/update.ts)_
 <!-- commandsstop -->

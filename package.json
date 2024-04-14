@@ -21,7 +21,9 @@
   ],
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
+    "build:dev": "shx rm -rf dist && tsc -b --watch",
     "lint": "eslint . --ext .ts",
+    "dev": "./bin/dev.js",
     "prepack": "yarn build && oclif manifest && oclif readme",
     "postpack": "shx rm -f oclif.manifest.json",
     "prepare": "yarn build",
@@ -45,9 +47,15 @@
     }
   },
   "dependencies": {
+    "@inquirer/checkbox": "^2.3.0",
+    "@inquirer/prompts": "^5.0.0",
+    "@langchain/community": "^0.0.48",
+    "@langchain/openai": "^0.0.28",
     "@oclif/core": "^3",
     "@oclif/plugin-help": "^6",
-    "@oclif/plugin-plugins": "^5"
+    "@oclif/plugin-plugins": "^5",
+    "add": "^2.0.6",
+    "langchain": "^0.1.33"
   },
   "devDependencies": {
     "@oclif/prettier-config": "^0.2.1",
