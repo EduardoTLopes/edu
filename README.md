@@ -27,9 +27,8 @@ USAGE
 # Commands
 <!-- commands -->
 * [`edu commit`](#edu-commit)
-* [`edu hello PERSON`](#edu-hello-person)
-* [`edu hello world`](#edu-hello-world)
 * [`edu help [COMMAND]`](#edu-help-command)
+* [`edu llm [FILE]`](#edu-llm-file)
 * [`edu plugins`](#edu-plugins)
 * [`edu plugins add PLUGIN`](#edu-plugins-add-plugin)
 * [`edu plugins:inspect PLUGIN...`](#edu-pluginsinspect-plugin)
@@ -43,62 +42,24 @@ USAGE
 
 ## `edu commit`
 
-Command to generate commits
+Command to generate commits based on the changes in the git repository.
 
 ```
 USAGE
-  $ edu commit
+  $ edu commit [-g] [-l]
+
+FLAGS
+  -g, --gpt    Use GPT-4 to generate the commit message.
+  -l, --llama  Use Ollama to generate the commit message.
 
 DESCRIPTION
-  Command to generate commits
+  Command to generate commits based on the changes in the git repository.
 
 EXAMPLES
   $ edu commit
 ```
 
 _See code: [src/commands/commit.ts](https://github.com/EduardoTLopes/edu/blob/v0.0.0/src/commands/commit.ts)_
-
-## `edu hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ edu hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [src/commands/hello/index.ts](https://github.com/EduardoTLopes/edu/blob/v0.0.0/src/commands/hello/index.ts)_
-
-## `edu hello world`
-
-Say hello world
-
-```
-USAGE
-  $ edu hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ edu hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/EduardoTLopes/edu/blob/v0.0.0/src/commands/hello/world.ts)_
 
 ## `edu help [COMMAND]`
 
@@ -119,6 +80,30 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.0.21/src/commands/help.ts)_
+
+## `edu llm [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ edu llm [FILE] [-f] [-n <value>]
+
+ARGUMENTS
+  FILE  file to read
+
+FLAGS
+  -f, --force
+  -n, --name=<value>  name to print
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ edu llm
+```
+
+_See code: [src/commands/llm.ts](https://github.com/EduardoTLopes/edu/blob/v0.0.0/src/commands/llm.ts)_
 
 ## `edu plugins`
 
@@ -141,7 +126,7 @@ EXAMPLES
   $ edu plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.12/src/commands/plugins/index.ts)_
 
 ## `edu plugins add PLUGIN`
 
@@ -215,7 +200,7 @@ EXAMPLES
   $ edu plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.12/src/commands/plugins/inspect.ts)_
 
 ## `edu plugins install PLUGIN`
 
@@ -264,7 +249,7 @@ EXAMPLES
     $ edu plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.12/src/commands/plugins/install.ts)_
 
 ## `edu plugins link PATH`
 
@@ -294,7 +279,7 @@ EXAMPLES
   $ edu plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.12/src/commands/plugins/link.ts)_
 
 ## `edu plugins remove [PLUGIN]`
 
@@ -335,7 +320,7 @@ FLAGS
   --reinstall  Reinstall all plugins after uninstalling.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/reset.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.12/src/commands/plugins/reset.ts)_
 
 ## `edu plugins uninstall [PLUGIN]`
 
@@ -363,7 +348,7 @@ EXAMPLES
   $ edu plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.12/src/commands/plugins/uninstall.ts)_
 
 ## `edu plugins unlink [PLUGIN]`
 
@@ -407,5 +392,5 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.8/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.12/src/commands/plugins/update.ts)_
 <!-- commandsstop -->
