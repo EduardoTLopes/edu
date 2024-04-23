@@ -6,9 +6,13 @@
     "rootDir": "src",
     "strict": true,
     "target": "es2022",
-    "moduleResolution": "node16"
+    "moduleResolution": "node16",
+    "paths": {
+      "cheerio": ["./node_modules/cheerio/lib/index.d.ts"]
+    },
+    "typeRoots": ["./node_modules/@types", "./types"]
   },
-  "include": ["./src/**/*"],
+  "include": ["src/**/*", "types/**/*"],
   "ts-node": {
     "esm": true
   }
