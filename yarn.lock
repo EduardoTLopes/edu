@@ -916,10 +916,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@langchain/community@^0.0.50", "@langchain/community@~0.0.47":
-  version "0.0.50"
-  resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.0.50.tgz#0f3e6b1a37e4aed807c6b8f07403b042e9b1feb3"
-  integrity sha512-ZxS0qmvEKlRYPtIPnzSa+un82mqi+DpxEsME6aLJSxEmQpk4vwoArcL/KzHEtM8vsi3ZKB15f7BNS6Qp00rizg==
+"@langchain/community@^0.0.51", "@langchain/community@~0.0.47":
+  version "0.0.51"
+  resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.0.51.tgz#7952c9489cdfbb9ada489a6482e047c18fea249d"
+  integrity sha512-TInG0nDCGIwg2iwHJkv1OYGVR2fDMYdpKRuuLlQoevvcHcCRIVlQS5d0MnAx0bWGUbVdkKpshrH8Ltpxt6fewA==
   dependencies:
     "@langchain/core" "~0.1.56"
     "@langchain/openai" "~0.0.28"
