@@ -916,12 +916,12 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@langchain/community@^0.0.50", "@langchain/community@~0.0.47":
-  version "0.0.50"
-  resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.0.50.tgz#0f3e6b1a37e4aed807c6b8f07403b042e9b1feb3"
-  integrity sha512-ZxS0qmvEKlRYPtIPnzSa+un82mqi+DpxEsME6aLJSxEmQpk4vwoArcL/KzHEtM8vsi3ZKB15f7BNS6Qp00rizg==
+"@langchain/community@^0.0.53", "@langchain/community@~0.0.47":
+  version "0.0.53"
+  resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.0.53.tgz#a9aaedffa0ed2977e8d302d74e9f90a49a6da037"
+  integrity sha512-iFqZPt4MRssGYsQoKSXWJQaYTZCC7WNuilp2JCCs3wKmJK3l6mR0eV+PDrnT+TaDHUVxt/b0rwgM0sOiy0j2jA==
   dependencies:
-    "@langchain/core" "~0.1.56"
+    "@langchain/core" "~0.1.60"
     "@langchain/openai" "~0.0.28"
     expr-eval "^2.0.2"
     flat "^5.0.2"
@@ -930,10 +930,10 @@
     zod "^3.22.3"
     zod-to-json-schema "^3.22.5"
 
-"@langchain/core@^0.1.58", "@langchain/core@~0.1.56":
-  version "0.1.58"
-  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.1.58.tgz#a1708ddadb12cbbbb77d24a36a35d1802c2eeeaa"
-  integrity sha512-a3b2wQbseLLnoRfQY3W6cnbSreHlPfrCoi41kznzzXTgToPK7cSeCn1wOK4CmLdWu9HCk8cm3x5yM5FXPNEP+Q==
+"@langchain/core@^0.1.58", "@langchain/core@~0.1.56", "@langchain/core@~0.1.60":
+  version "0.1.61"
+  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.1.61.tgz#9313363e04f1c6981a938b2909c44ce6fceb2736"
+  integrity sha512-C8OkAly+ugvXsL8TACCmFv9WTTcT4gvQaG6NbrXCOzibBCywfxxcTqEMOyg3zIKpxHEmR0DHqh0OiJRHocnsCg==
   dependencies:
     ansi-styles "^5.0.0"
     camelcase "6"
