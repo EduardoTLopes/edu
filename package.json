@@ -49,7 +49,7 @@
   "dependencies": {
     "@inquirer/checkbox": "^2.3.0",
     "@inquirer/prompts": "^5.0.1",
-    "@langchain/community": "^0.0.50",
+    "@langchain/community": "^0.2.13",
     "@langchain/core": "^0.1.58",
     "@langchain/openai": "^0.0.28",
     "@oclif/core": "^3",

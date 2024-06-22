@@ -916,7 +916,24 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@langchain/community@^0.0.50", "@langchain/community@~0.0.47":
+"@langchain/community@^0.2.13":
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.2.13.tgz#7a327663d2a6006456ff136d2b16cb2b1a76b541"
+  integrity sha512-f0GZCGM5XP0r+H643GpUU4YelKHsUdhUY1Kb8rKpCoy8zgs1nUkiYDVylAf0ezwUOT4NYCEuwpw0jj8hQSLn1Q==
+  dependencies:
+    "@langchain/core" "~0.2.9"
+    "@langchain/openai" "~0.1.0"
+    binary-extensions "^2.2.0"
+    expr-eval "^2.0.2"
+    flat "^5.0.2"
+    js-yaml "^4.1.0"
+    langchain "0.2.3"
+    langsmith "~0.1.30"
+    uuid "^9.0.0"
+    zod "^3.22.3"
+    zod-to-json-schema "^3.22.5"
+
+"@langchain/community@~0.0.47":
   version "0.0.50"
   resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.0.50.tgz#0f3e6b1a37e4aed807c6b8f07403b042e9b1feb3"
   integrity sha512-ZxS0qmvEKlRYPtIPnzSa+un82mqi+DpxEsME6aLJSxEmQpk4vwoArcL/KzHEtM8vsi3ZKB15f7BNS6Qp00rizg==
@@ -929,6 +946,24 @@
     uuid "^9.0.0"
     zod "^3.22.3"
     zod-to-json-schema "^3.22.5"
+
+"@langchain/core@>0.2.0 <0.3.0", "@langchain/core@>=0.2.5 <0.3.0", "@langchain/core@~0.2.0", "@langchain/core@~0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.2.9.tgz#8a22585ef11d2ca8742a8bbfe77dd25baedc7779"
+  integrity sha512-pJshopBZqMNF020q0OrrO+vfApWTZUlZecRYMM7TWA5M8/zvEyU/mgA9DlzeRjjDmG6pwF6dIKVjpl6fIGVXlQ==
+  dependencies:
+    ansi-styles "^5.0.0"
+    camelcase "6"
+    decamelize "1.2.0"
+    js-tiktoken "^1.0.12"
+    langsmith "~0.1.30"
+    ml-distance "^4.0.0"
+    mustache "^4.2.0"
+    p-queue "^6.6.2"
+    p-retry "4"
+    uuid "^9.0.0"
+    zod "^3.22.4"
+    zod-to-json-schema "^3.22.3"
 
 "@langchain/core@^0.1.58", "@langchain/core@~0.1.56":
   version "0.1.58"
@@ -958,6 +993,25 @@
     openai "^4.32.1"
     zod "^3.22.4"
     zod-to-json-schema "^3.22.3"
+
+"@langchain/openai@~0.1.0":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@langchain/openai/-/openai-0.1.3.tgz#6eb0994e970d85ffa9aaeafb94449024ccf6ca63"
+  integrity sha512-riv/JC9x2A8b7GcHu8sx+mlZJ8KAwSSi231IPTlcciYnKozmrQ5H0vrtiD31fxiDbaRsk7tyCpkSBIOQEo7CyQ==
+  dependencies:
+    "@langchain/core" ">=0.2.5 <0.3.0"
+    js-tiktoken "^1.0.12"
+    openai "^4.49.1"
+    zod "^3.22.4"
+    zod-to-json-schema "^3.22.3"
+
+"@langchain/textsplitters@~0.0.0":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@langchain/textsplitters/-/textsplitters-0.0.3.tgz#1a3cc93dd2ab330edb225400ded190a22fea14e3"
+  integrity sha512-cXWgKE3sdWLSqAa8ykbCcUsUF1Kyr5J3HOWYGuobhPEycXW4WI++d5DhzdpL238mzoEXTi90VqfSCra37l5YqA==
+  dependencies:
+    "@langchain/core" ">0.2.0 <0.3.0"
+    js-tiktoken "^1.0.12"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -4433,6 +4487,13 @@ jake@^10.8.5:
     filelist "^1.0.4"
     minimatch "^3.1.2"
 
+js-tiktoken@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/js-tiktoken/-/js-tiktoken-1.0.12.tgz#af0f5cf58e5e7318240d050c8413234019424211"
+  integrity sha512-L7wURW1fH9Qaext0VzaUDpFGVQgjkdE3Dgsy9/+yXyGEpBKnylTd0mU0bfbNkKDlXRb6TEsZkwuflu1B8uQbJQ==
+  dependencies:
+    base64-js "^1.5.1"
+
 js-tiktoken@^1.0.7, js-tiktoken@^1.0.8:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/js-tiktoken/-/js-tiktoken-1.0.11.tgz#d7d707b849f703841112660d9d55169424a35344"
@@ -4561,6 +4622,28 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
+langchain@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/langchain/-/langchain-0.2.3.tgz#c14bb05cf871b21bd63b84b3ab89580b1d62539f"
+  integrity sha512-T9xR7zd+Nj0oXy6WoYKmZLy0DlQiDLFPGYWdOXDxy+AvqlujoPdVQgDSpdqiOHvAjezrByAoKxoHCz5XMwTP/Q==
+  dependencies:
+    "@langchain/core" "~0.2.0"
+    "@langchain/openai" "~0.0.28"
+    "@langchain/textsplitters" "~0.0.0"
+    binary-extensions "^2.2.0"
+    js-tiktoken "^1.0.12"
+    js-yaml "^4.1.0"
+    jsonpointer "^5.0.1"
+    langchainhub "~0.0.8"
+    langsmith "~0.1.7"
+    ml-distance "^4.0.0"
+    openapi-types "^12.1.3"
+    p-retry "4"
+    uuid "^9.0.0"
+    yaml "^2.2.1"
+    zod "^3.22.4"
+    zod-to-json-schema "^3.22.3"
+
 langchain@^0.1.34:
   version "0.1.34"
   resolved "https://registry.yarnpkg.com/langchain/-/langchain-0.1.34.tgz#3c28a6bde69c5f4ac3931376d34187de0e44e43a"
@@ -4589,10 +4672,10 @@ langchainhub@~0.0.8:
   resolved "https://registry.yarnpkg.com/langchainhub/-/langchainhub-0.0.8.tgz#fd4b96dc795e22e36c1a20bad31b61b0c33d3110"
   integrity sha512-Woyb8YDHgqqTOZvWIbm2CaFDGfZ4NTSyXV687AG4vXEfoNo7cGQp7nhl7wL3ehenKWmNEmcxCLgOZzW8jE6lOQ==
 
-langsmith@~0.1.1, langsmith@~0.1.7:
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/langsmith/-/langsmith-0.1.18.tgz#ebfe4efb98bad93e042e787f0c6795267a8dabe8"
-  integrity sha512-LHk0aIFAl3/iiKvUzAiM8Xdm13bRO70XERQeHCF99fL2X815Jc47nxu6m7usSuQC8sw6rirCKZbGm18cqdUEzA==
+langsmith@~0.1.1, langsmith@~0.1.30, langsmith@~0.1.7:
+  version "0.1.32"
+  resolved "https://registry.yarnpkg.com/langsmith/-/langsmith-0.1.32.tgz#38938b0e8685522087b697b8200c488c6490c137"
+  integrity sha512-EUWHIH6fiOCGRYdzgwGoXwJxCMyUrL+bmUcxoVmkXoXoAGDOVinz8bqJLKbxotsQWqM64NKKsW85OTIutgNaMQ==
   dependencies:
     "@types/uuid" "^9.0.1"
     commander "^10.0.1"
@@ -5494,6 +5577,20 @@ openai@^4.32.1:
   version "4.38.2"
   resolved "https://registry.yarnpkg.com/openai/-/openai-4.38.2.tgz#4c5335260b819a0f89fd8f922fac6aa942f540e7"
   integrity sha512-M16ehj0D84Gjq5cjvBzXRb5X+UvtWlxPDRAWAWMC0EN+6nHqnULIn5fWWeiexDPup25FeSZYv/ldp8KefcZVJQ==
+  dependencies:
+    "@types/node" "^18.11.18"
+    "@types/node-fetch" "^2.6.4"
+    abort-controller "^3.0.0"
+    agentkeepalive "^4.2.1"
+    form-data-encoder "1.7.2"
+    formdata-node "^4.3.2"
+    node-fetch "^2.6.7"
+    web-streams-polyfill "^3.2.1"
+
+openai@^4.49.1:
+  version "4.52.0"
+  resolved "https://registry.yarnpkg.com/openai/-/openai-4.52.0.tgz#5f93bdbef05ca3407d92f7a68717234ac0ffd09e"
+  integrity sha512-xmiNcdA9QJ5wffHpZDpIsge6AsPTETJ6h5iqDNuFQ7qGSNtonHn8Qe0VHy4UwLE8rBWiSqh4j+iSvuYZSeKkPg==
   dependencies:
     "@types/node" "^18.11.18"
     "@types/node-fetch" "^2.6.4"
